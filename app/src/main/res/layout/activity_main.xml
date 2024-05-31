@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="@string/what_would_you_like_to_do"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/computeAverageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="209dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/compute_average"
+        android:textColor="#4E342E"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/contactsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computeAverageButton"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/contacts"
+        android:textColor="#0D47A1"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>
